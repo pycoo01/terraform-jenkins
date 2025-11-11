@@ -9,16 +9,7 @@ pipeline {
     }
 
    agent  any
-    stages {
-         stage('Terraform') {
-      steps {
-        sh '''
-          terraform version
-          terraform init
-        '''
-      }
-    }
-        
+    stages {      
         stage('checkout') {
             steps {
                  script{
