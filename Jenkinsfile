@@ -15,7 +15,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "Jenkinsfile"
+                            git "https://github.com/pycoo01/terraform-jenkins/blob/main/Jenkinsfile"
                         }
                     }
                 }
